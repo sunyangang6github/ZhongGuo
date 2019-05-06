@@ -137,6 +137,7 @@
             <artifactId>dom4j</artifactId>
             <version>1.6.1</version><!--$NO-MVN-MAN-VER$ -->
         </dependency>
+
         <dependency>
             <groupId>com.alipay</groupId>
             <artifactId>alipay-trade-sdk</artifactId>
@@ -147,7 +148,7 @@
             <groupId>com.alipay</groupId>
             <artifactId>alipay-sdk-java</artifactId>
             <version>3.3.0</version>
-            <scope>system</scope>
+            <!--<scope>system</scope>-->
             <!--<systemPath>${basedir}\..\alipay-sdk-java-3.3.0.jar</systemPath>-->
         </dependency>
         <!-- 银联使用bcprov-jdk16 -->
@@ -270,7 +271,7 @@
         </dependency>
     </dependencies>
 
-    <repositories>
+<!--    <repositories>
         <repository>
             <snapshots>
                 <enabled>true</enabled>
@@ -280,6 +281,20 @@
             <url>http://192.168.28.129:9999/nexus/content/groups/public/</url>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>http://192.168.28.129:9999/nexus/content/repositories/thirdparty/</url>
+        </pluginRepository>
+    </pluginRepositories>-->
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

@@ -62,7 +62,7 @@
 
     </dependencies>
 
-    <repositories>
+    <!--<repositories>
         <repository>
             <snapshots>
                 <enabled>true</enabled>
@@ -71,7 +71,7 @@
             <name>Central Repository</name>
             <url>http://192.168.28.129:9999/nexus/content/groups/public/</url>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <build>
         <plugins>
