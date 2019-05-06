@@ -141,15 +141,14 @@
             <groupId>com.alipay</groupId>
             <artifactId>alipay-trade-sdk</artifactId>
             <version>20161215</version>
-            <scope>system</scope>
-            <systemPath>${basedir}\..\alipay-trade-sdk-20161215.jar</systemPath>
+            <!--<systemPath>${basedir}\..\alipay-trade-sdk-20161215.jar</systemPath>-->
         </dependency>
         <dependency>
             <groupId>com.alipay</groupId>
             <artifactId>alipay-sdk-java</artifactId>
             <version>3.3.0</version>
             <scope>system</scope>
-            <systemPath>${basedir}\..\alipay-sdk-java-3.3.0.jar</systemPath>
+            <!--<systemPath>${basedir}\..\alipay-sdk-java-3.3.0.jar</systemPath>-->
         </dependency>
         <!-- 银联使用bcprov-jdk16 -->
         <dependency>
@@ -270,6 +269,18 @@
             <version>${logback.version}</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>http://192.168.28.129:9999/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
